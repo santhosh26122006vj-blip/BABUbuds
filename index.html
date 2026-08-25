@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BABUbuds X1 — Sound. Without Limits.</title>
+<meta name="description" content="BABUbuds X1. Engineered for immersive sound, intelligent silence, and all-day comfort.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- CUSTOM CURSOR (desktop only) -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__logo">BABU<span>buds</span></a>
+    <nav class="nav__links">
+      <a href="#product">Product</a>
+      <a href="#sound">Sound</a>
+      <a href="#technology">Technology</a>
+      <a href="#comfort">Comfort</a>
+      <a href="#specs">Specs</a>
+      <a href="#compare">Compare</a>
+    </nav>
+    <a href="#final-cta" class="nav__cta">Buy X1</a>
+    <button class="nav__burger" id="navBurger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+  <div class="hero__bg-layer">
+    <!-- HERO 01 -->
+    <div class="hero__bg active" data-hero="01">
+      <img src="images\hero 1.png" alt="BABUbuds hero background 1">
+    </div>
+    <!-- HERO 02 -->
+    <div class="hero__bg" data-hero="02">
+      <img src="images\hero 2.png" alt="BABUbuds hero background 2">
+    </div>
+    <!-- HERO 03 -->
+    <div class="hero__bg" data-hero="03">
+      <img src="images\hero 3.png" alt="BABUbuds hero background 3">
+    </div>
+    <!-- HERO 04 -->
+    <div class="hero__bg" data-hero="04">
+      <img src="images\hero 4.png" alt="BABUbuds hero background 4">
+    </div>
+    <!-- HERO 05 -->
+    <div class="hero__bg" data-hero="05">
+      <img src="images\hero 5.png" alt="BABUbuds hero background 5">
+    </div>
+  </div>
+
+  <div class="hero__overlay"></div>
+  <div class="hero__vignette"></div>
+
+  <div class="hero__particles" id="heroParticles" aria-hidden="true"></div>
+
+  <div class="hero__grain" aria-hidden="true"></div>
+
+  <!-- floating technical labels -->
+  <div class="hero__labels" aria-hidden="true">
+    <span class="hero__label" data-depth="0.4" style="top:22%; left:8%;">40MM DRIVER</span>
+    <span class="hero__label" data-depth="0.7" style="top:68%; left:12%;">ADAPTIVE ANC</span>
+    <span class="hero__label" data-depth="0.5" style="top:30%; right:9%;">SPATIAL AUDIO</span>
+    <span class="hero__label" data-depth="0.9" style="top:74%; right:14%;">HI-RES CERTIFIED</span>
+  </div>
+
+  <div class="hero__content">
+    <p class="hero__eyebrow reveal-up">BABUbuds X1</p>
+    <h1 class="hero__headline reveal-up">SOUND.<br>WITHOUT LIMITS.</h1>
+    <p class="hero__sub reveal-up">Engineered for immersive sound, intelligent silence, and all-day comfort.</p>
+    <div class="hero__actions reveal-up">
+      <a href="#product" class="btn btn--primary">Explore X1</a>
+      <a href="#technology" class="btn btn--ghost">Discover Technology</a>
+    </div>
+  </div>
+
+  <div class="hero__footer">
+    <div class="hero__index">
+      <span id="heroIndexCurrent">01</span>
+      <span class="hero__index-divider"></span>
+      <span>05</span>
+    </div>
+    <div class="hero__dots" id="heroDots">
+      <button class="hero__dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="hero__dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="hero__dot" data-slide="2" aria-label="Slide 3"></button>
+      <button class="hero__dot" data-slide="3" aria-label="Slide 4"></button>
+      <button class="hero__dot" data-slide="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="hero__scroll">
+      <span>SCROLL</span>
+      <div class="hero__scroll-line"><i></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUCT ================= -->
+<section class="product" id="product">
+  <div class="section-frame">
+    <p class="eyebrow reveal">The Flagship</p>
+    <h2 class="section-title reveal">Meet BABUbuds X1</h2>
+  </div>
+
+  <div class="product__stage">
+    <div class="product__image-wrap reveal-scale">
+      <img src="images\product.png" alt="BABUbuds X1 headphones" class="product__image" id="productImage">
+      <div class="product__reflection"></div>
+    </div>
+
+    <div class="product__hotspots" id="hotspots">
+  <button class="hotspot" style="top:36%; left:31%;" data-hotspot="anc">
+    <span class="hotspot__dot"></span>
+    <span class="hotspot__card">
+      <strong>Adaptive ANC</strong>
+      <em>Reads your environment in real time and cancels noise before you notice it.</em>
+    </span>
+  </button>
+  <button class="hotspot" style="top:36%; left:68%;" data-hotspot="spatial">
+    <span class="hotspot__dot"></span>
+    <span class="hotspot__card">
+      <strong>Spatial Audio</strong>
+      <em>Dynamic head-tracking places sound around you, not just beside you.</em>
+    </span>
+  </button>
+  <button class="hotspot" style="top:67%; left:38%;" data-hotspot="driver">
+    <span class="hotspot__dot"></span>
+    <span class="hotspot__card">
+      <strong>40mm Driver</strong>
+      <em>Custom-tuned dynamic driver for rich, accurate sound across every frequency.</em>
+    </span>
+  </button>
+  <button class="hotspot" style="top:67%; left:60%;" data-hotspot="foam">
+    <span class="hotspot__dot"></span>
+    <span class="hotspot__card">
+      <strong>Memory Foam</strong>
+      <em>Ear cushions that mold to you and stay comfortable for hours.</em>
+    </span>
+  </button>
+  <button class="hotspot" style="top:80%; left:61%;" data-hotspot="touch">
+    <span class="hotspot__dot"></span>
+    <span class="hotspot__card">
+      <strong>Touch Controls</strong>
+      <em>A single responsive surface for volume, calls, and playback.</em>
+    </span>
+  </button>
+</div>
+  </div>
+</section>
+
+<!-- ================= SOUND ================= -->
+<section class="sound" id="sound">
+  <div class="section-frame">
+    <p class="eyebrow reveal">Acoustic Engineering</p>
+    <h2 class="section-title reveal">Feel every frequency.</h2>
+    <p class="section-copy reveal">A custom driver array reproduces the full range of human hearing — from the lowest sub-bass to the airiest high — with nothing lost in between.</p>
+  </div>
+
+  <div class="sound__stage">
+    <canvas id="soundCanvas" class="sound__canvas"></canvas>
+    <div class="sound__particles" id="soundParticles" aria-hidden="true"></div>
+    <div class="sound__freqs" aria-hidden="true">
+      <span>20Hz</span><span>250Hz</span><span>2kHz</span><span>10kHz</span><span>40kHz</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TECHNOLOGY ================= -->
+<section class="tech" id="technology">
+  <div class="section-frame">
+    <p class="eyebrow reveal">Inside X1</p>
+    <h2 class="section-title reveal">Technology built to disappear into the music.</h2>
+  </div>
+
+  <div class="tech__grid">
+    <article class="tech__item reveal-up">
+      <span class="tech__index">01</span>
+      <h3>40mm Driver</h3>
+      <p>A large-format dynamic driver, hand-tuned for a balanced, natural signature at any volume.</p>
+    </article>
+    <article class="tech__item reveal-up">
+      <span class="tech__index">02</span>
+      <h3>Spatial Audio</h3>
+      <p>Real-time head-tracked audio that adapts as you move, for sound that surrounds rather than sits in your ears.</p>
+    </article>
+    <article class="tech__item reveal-up">
+      <span class="tech__index">03</span>
+      <h3>Adaptive EQ</h3>
+      <p>Continuously measures the fit and seal of each ear cup and adjusts frequency response on the fly.</p>
+    </article>
+    <article class="tech__item reveal-up">
+      <span class="tech__index">04</span>
+      <h3>Hi-Res Audio</h3>
+      <p>Certified support for lossless, high-resolution formats — every detail, exactly as recorded.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ================= ANC ================= -->
+<section class="anc" id="anc">
+  <div class="section-frame">
+    <p class="eyebrow reveal">Active Noise Cancellation</p>
+    <h2 class="section-title reveal">Silence, intelligently.</h2>
+    <p class="section-copy reveal">X1 listens to the world around you thousands of times per second, then cancels it out before it ever reaches your ear.</p>
+  </div>
+
+  <div class="anc__stage">
+    <svg class="anc__waveform" id="ancWaveform" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
+      <path id="ancPath1" d="" />
+      <path id="ancPath2" d="" />
+      <path id="ancPath3" d="" />
+    </svg>
+    <p class="anc__caption" id="ancCaption">NOISE DETECTED</p>
+  </div>
+</section>
+
+<!-- ================= TRANSPARENCY ================= -->
+<section class="transparency" id="transparency">
+  <div class="transparency__bg" id="transparencyBg"></div>
+  <div class="section-frame">
+    <p class="eyebrow reveal">Transparency Mode</p>
+    <h2 class="section-title reveal">Stay connected to the world.</h2>
+  </div>
+
+  <div class="transparency__toggle-wrap">
+    <div class="transparency__toggle" id="transparencyToggle" role="button" tabindex="0" aria-label="Toggle isolate and aware mode">
+      <span class="transparency__option transparency__option--isolate active" data-mode="isolate">ISOLATE</span>
+      <span class="transparency__slider"></span>
+      <span class="transparency__option transparency__option--aware" data-mode="aware">AWARE</span>
+    </div>
+    <p class="transparency__desc" id="transparencyDesc">Every outside sound fades away. Just you and the music.</p>
+  </div>
+</section>
+
+<!-- ================= COMFORT ================= -->
+<section class="comfort" id="comfort">
+  <div class="comfort__layout">
+    <div class="section-frame section-frame--left">
+      <p class="eyebrow reveal">Ergonomics</p>
+      <h2 class="section-title reveal">Designed to disappear.</h2>
+      <p class="section-copy reveal">Aerospace-grade aluminum, memory-foam cushions, and a weight so balanced you'll forget you're wearing anything at all.</p>
+
+      <ul class="comfort__list">
+        <li class="reveal-up"><span>Weight</span><strong>238g</strong></li>
+        <li class="reveal-up"><span>Cushions</span><strong>Memory foam + protein leather</strong></li>
+        <li class="reveal-up"><span>Headband</span><strong>Suspended aluminum frame</strong></li>
+        <li class="reveal-up"><span>Fit</span><strong>Auto-adjust clamping force</strong></li>
+      </ul>
+    </div>
+    <div class="comfort__image-wrap reveal-scale">
+      <img src="images\a.png" alt="BABUbuds X1 comfort detail" class="comfort__image">
+    </div>
+  </div>
+</section>
+
+<!-- ================= BATTERY ================= -->
+<section class="battery" id="battery">
+  <div class="section-frame">
+    <p class="eyebrow reveal">All-Day Power</p>
+    <h2 class="section-title reveal">40 Hours</h2>
+    <p class="section-copy reveal">One charge carries you through a week of commutes, calls, and everything in between.</p>
+  </div>
+
+  <div class="battery__stage">
+    <div class="battery__shell">
+      <div class="battery__fill" id="batteryFill"></div>
+      <span class="battery__percent" id="batteryPercent">0%</span>
+    </div>
+    <div class="battery__meta">
+      <div class="battery__meta-item reveal-up">
+        <span class="battery__meta-icon" data-icon="usb-c"></span>
+        <strong>USB-C</strong>
+        <p>Universal charging, no adapters needed.</p>
+      </div>
+      <div class="battery__meta-item reveal-up">
+        <span class="battery__meta-icon" data-icon="fast"></span>
+        <strong>Fast Charge</strong>
+        <p>10 minutes of charge for 5 hours of playback.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTROLS ================= -->
+<section class="controls" id="controls">
+  <div class="section-frame">
+    <p class="eyebrow reveal">On-Ear Controls</p>
+    <h2 class="section-title reveal">Everything, one touch away.</h2>
+  </div>
+
+  <div class="controls__panel">
+    <button class="control-btn" data-control="volume-down" aria-label="Volume down">
+      <span class="control-btn__icon">−</span><span class="control-btn__label">VOL</span>
+    </button>
+    <button class="control-btn control-btn--play" data-control="play" aria-label="Play or pause">
+      <span class="control-btn__icon" id="playIcon">▶</span><span class="control-btn__label">PLAY</span>
+    </button>
+    <button class="control-btn" data-control="volume-up" aria-label="Volume up">
+      <span class="control-btn__icon">+</span><span class="control-btn__label">VOL</span>
+    </button>
+    <button class="control-btn" data-control="skip" aria-label="Skip track">
+      <span class="control-btn__icon">⏭</span><span class="control-btn__label">SKIP</span>
+    </button>
+    <button class="control-btn" data-control="anc" aria-label="Toggle ANC">
+      <span class="control-btn__icon">◐</span><span class="control-btn__label">ANC</span>
+    </button>
+    <button class="control-btn" data-control="voice" aria-label="Voice assistant">
+      <span class="control-btn__icon">◆</span><span class="control-btn__label">VOICE</span>
+    </button>
+  </div>
+  <p class="controls__hint" id="controlsHint">Tap a control to see it respond.</p>
+</section>
+
+<!-- ================= CONNECTIVITY ================= -->
+<section class="connectivity" id="connectivity">
+  <div class="section-frame">
+    <p class="eyebrow reveal">Multipoint Pairing</p>
+    <h2 class="section-title reveal">One pair. Every device.</h2>
+  </div>
+
+  <div class="connectivity__diagram">
+    <div class="connectivity__hub">
+      <span>X1</span>
+    </div>
+    <svg class="connectivity__lines" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <path class="conn-line" id="linephone" d="" />
+      <path class="conn-line" id="linetablet" d="" />
+      <path class="conn-line" id="linelaptop" d="" />
+      <path class="conn-line" id="linetv" d="" />
+    </svg>
+    <div class="connectivity__node" id="nodePhone" style="top:8%; left:15%;"><span>Phone</span></div>
+    <div class="connectivity__node" id="nodeTablet" style="top:8%; right:15%;"><span>Tablet</span></div>
+    <div class="connectivity__node" id="nodeLaptop" style="bottom:8%; left:15%;"><span>Laptop</span></div>
+    <div class="connectivity__node" id="nodeTv" style="bottom:8%; right:15%;"><span>TV</span></div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="gallery" id="gallery">
+  <div class="section-frame">
+    <p class="eyebrow reveal">Gallery</p>
+    <h2 class="section-title reveal">Every angle, considered.</h2>
+  </div>
+
+  <div class="gallery__grid">
+    <figure class="gallery__item gallery__item--tall reveal-up"><img src="images\G1.png" alt="BABUbuds X1 gallery image 1"></figure>
+    <figure class="gallery__item reveal-up"><img src="images\G2.png" alt="BABUbuds X1 gallery image 2"></figure>
+    <figure class="gallery__item reveal-up"><img src="images\G3.png" alt="BABUbuds X1 gallery image 3"></figure>
+    <figure class="gallery__item gallery__item--wide reveal-up"><img src="images\G4.png" alt="BABUbuds X1 gallery image 4"></figure>
+    <figure class="gallery__item reveal-up"><img src="images\G5.png" alt="BABUbuds X1 gallery image 5"></figure>
+    <figure class="gallery__item gallery__item--tall reveal-up"><img src="images\G6.png" alt="BABUbuds X1 gallery image 6"></figure>
+  </div>
+</section>
+
+<!-- ================= SPECIFICATIONS ================= -->
+<section class="specs" id="specs">
+  <div class="section-frame">
+    <p class="eyebrow reveal">Specifications</p>
+    <h2 class="section-title reveal">The numbers behind the sound.</h2>
+  </div>
+
+  <div class="specs__table">
+    <div class="specs__row reveal-up"><span>Driver</span><strong>40mm dynamic, titanium-coated diaphragm</strong></div>
+    <div class="specs__row reveal-up"><span>Frequency Response</span><strong>20Hz – 40kHz</strong></div>
+    <div class="specs__row reveal-up"><span>Battery Life</span><strong>40 hours (ANC on)</strong></div>
+    <div class="specs__row reveal-up"><span>Charging</span><strong>USB-C, fast charge</strong></div>
+    <div class="specs__row reveal-up"><span>Bluetooth</span><strong>5.3, multipoint</strong></div>
+    <div class="specs__row reveal-up"><span>Noise Cancellation</span><strong>Adaptive Hybrid ANC</strong></div>
+    <div class="specs__row reveal-up"><span>Weight</span><strong>238g</strong></div>
+    <div class="specs__row reveal-up"><span>Audio Codecs</span><strong>LDAC, AAC, SBC</strong></div>
+    <div class="specs__row reveal-up"><span>Microphones</span><strong>6-mic array with wind reduction</strong></div>
+  </div>
+</section>
+
+<!-- ================= COMPARISON ================= -->
+<section class="compare" id="compare">
+  <div class="section-frame">
+    <p class="eyebrow reveal">Compare</p>
+    <h2 class="section-title reveal">Find your fit.</h2>
+  </div>
+
+  <div class="compare__table-wrap">
+    <table class="compare__table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>BABUbuds Air</th>
+          <th class="compare__highlight">BABUbuds X1</th>
+          <th>BABUbuds Studio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ANC</td>
+          <td>Basic</td>
+          <td class="compare__highlight">Adaptive Hybrid</td>
+          <td>Adaptive Hybrid</td>
+        </tr>
+        <tr>
+          <td>Battery</td>
+          <td>24 hrs</td>
+          <td class="compare__highlight">40 hrs</td>
+          <td>60 hrs</td>
+        </tr>
+        <tr>
+          <td>Driver</td>
+          <td>32mm</td>
+          <td class="compare__highlight">40mm</td>
+          <td>50mm</td>
+        </tr>
+        <tr>
+          <td>Spatial Audio</td>
+          <td>—</td>
+          <td class="compare__highlight">Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Transparency Mode</td>
+          <td>Yes</td>
+          <td class="compare__highlight">Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Weight</td>
+          <td>210g</td>
+          <td class="compare__highlight">238g</td>
+          <td>270g</td>
+        </tr>
+        <tr>
+          <td>Charging</td>
+          <td>USB-C</td>
+          <td class="compare__highlight">USB-C, fast charge</td>
+          <td>USB-C, fast charge</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="final-cta" id="final-cta">
+  <div class="final-cta__content">
+    <h2 class="reveal">READY TO HEAR<br>DIFFERENTLY?</h2>
+    <a href="#hero" class="btn btn--primary btn--large reveal-up">Explore BABUbuds X1</a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <span class="footer__logo">BABU<span>buds</span></span>
+      <p>Sound, engineered without compromise.</p>
+    </div>
+    <div class="footer__cols">
+      <div class="footer__col">
+        <h4>Product</h4>
+        <a href="#product">X1</a>
+        <a href="#technology">Technology</a>
+        <a href="#specs">Specifications</a>
+      </div>
+      <div class="footer__col">
+        <h4>Support</h4>
+        <a href="#">Contact</a>
+        <a href="#">Warranty</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Press</a>
+        <a href="#">Careers</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 BABUbuds. All rights reserved.</span>
+    <span>Fictional brand — portfolio project.</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
